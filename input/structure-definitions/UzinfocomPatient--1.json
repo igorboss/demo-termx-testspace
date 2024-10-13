@@ -1,0 +1,73 @@
+{
+  "id" : "UzinfocomPatient",
+  "name" : "UzinfocomPatient",
+  "resourceType" : "StructureDefinition",
+  "kind" : "logical",
+  "url" : "https://UzinfocomPatient",
+  "type" : "https://UzinfocomPatient",
+  "fhirVersion" : "5.0.0",
+  "abstract" : false,
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [ {
+      "id" : "UzinfocomPatient",
+      "path" : "UzinfocomPatient"
+    }, {
+      "id" : "UzinfocomPatient.identifierPINFL",
+      "max" : "*",
+      "min" : 1,
+      "path" : "UzinfocomPatient.identifierPINFL",
+      "short" : "identifierPINFL",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "UzinfocomPatient.firstname",
+      "max" : "*",
+      "min" : 1,
+      "path" : "UzinfocomPatient.firstname",
+      "short" : "surname",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "UzinfocomPatient.lastname",
+      "max" : "*",
+      "min" : 1,
+      "path" : "UzinfocomPatient.lastname",
+      "short" : "lastname",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "UzinfocomPatient.birthDate",
+      "max" : "*",
+      "min" : 1,
+      "path" : "UzinfocomPatient.birthDate",
+      "short" : "birthDate",
+      "type" : [ {
+        "code" : "date"
+      } ]
+    }, {
+      "id" : "UzinfocomPatient.birthDate.DateTime",
+      "max" : "*",
+      "min" : 1,
+      "path" : "UzinfocomPatient.birthDate.DateTime",
+      "short" : "DateTime",
+      "type" : [ {
+        "code" : "dateTime"
+      } ]
+    }, {
+      "id" : "UzinfocomPatient.id",
+      "max" : "*",
+      "min" : 0,
+      "path" : "UzinfocomPatient.id",
+      "short" : "id",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    } ]
+  },
+  "version" : "1"
+}

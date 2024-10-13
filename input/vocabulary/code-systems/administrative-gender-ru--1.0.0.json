@@ -1,0 +1,66 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "administrative-gender-ru--1.0.0",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "http://demo-web:4200/fhir/CodeSystem/administrative-gender-ru"
+  }, {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "http://loinc.org/CodeSystem/administrative-gender-ru",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "AdministrativeGenderRU",
+  "title" : "Administrative Gender (Supplement)",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-09-25T12:27:07.615012Z",
+  "publisher" : "LOINC",
+  "effectivePeriod" : {
+    "start" : "2024-09-25T00:00:00Z"
+  },
+  "content" : "supplement",
+  "supplements" : "http://hl7.org/fhir/administrative-gender",
+  "property" : [ {
+    "code" : "definition",
+    "description" : "Definition",
+    "type" : "string"
+  }, {
+    "code" : "display",
+    "uri" : "http://terminology.hl7.org/CodeSystem/designation-usage|display",
+    "description" : "Display",
+    "type" : "string"
+  } ],
+  "concept" : [ {
+    "code" : "female",
+    "display" : "Женщина",
+    "definition" : "Female.",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Female"
+    } ]
+  }, {
+    "code" : "male",
+    "display" : "Мужчина",
+    "definition" : "Male.",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Male"
+    } ]
+  }, {
+    "code" : "other",
+    "display" : "Other",
+    "definition" : "Other."
+  }, {
+    "code" : "unknown",
+    "display" : "Unknown",
+    "definition" : "Unknown."
+  } ]
+}

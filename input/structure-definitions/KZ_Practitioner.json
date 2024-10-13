@@ -1,0 +1,48 @@
+{
+  "id" : "KZ_Practitioner",
+  "name" : "KZ_Practitioner",
+  "resourceType" : "StructureDefinition",
+  "kind" : "logical",
+  "url" : "http://example.kz/Practitioner",
+  "type" : "http://example.kz/Practitioner",
+  "fhirVersion" : "5.0.0",
+  "abstract" : false,
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [ {
+      "id" : "KZ_Practitioner",
+      "path" : "KZ_Practitioner"
+    }, {
+      "definition" : "id",
+      "id" : "KZ_Practitioner.id",
+      "max" : "1",
+      "min" : 1,
+      "path" : "KZ_Practitioner.id",
+      "short" : "id",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "definition" : "name",
+      "id" : "KZ_Practitioner.name",
+      "max" : "1",
+      "min" : 1,
+      "path" : "KZ_Practitioner.name",
+      "short" : "name",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "definition" : "specialty",
+      "id" : "KZ_Practitioner.specialty",
+      "max" : "1",
+      "min" : 1,
+      "path" : "KZ_Practitioner.specialty",
+      "short" : "specialty",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    } ]
+  }
+}

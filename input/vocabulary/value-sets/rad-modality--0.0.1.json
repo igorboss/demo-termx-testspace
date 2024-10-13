@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "rad-modality--0.0.1",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "http://demo-web:4200/fhir/ValueSet/rad-modality"
+  } ],
+  "url" : "https://taltech.ee/fhir/ValueSet/rad-modality",
+  "version" : "0.0.1",
+  "name" : "RadModality",
+  "title" : "Modality",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-10-04T13:51:46.145621Z",
+  "publisher" : "TalTech",
+  "description" : "Form of radiological imaging",
+  "effectivePeriod" : {
+    "start" : "2024-08-09T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11000181102/version/20240530",
+      "concept" : [ {
+        "code" : "77343006"
+      }, {
+        "code" : "363680008"
+      } ]
+    } ]
+  }
+}

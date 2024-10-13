@@ -1,0 +1,62 @@
+{
+  "id" : "immunizationcard",
+  "name" : "immunizationcard",
+  "resourceType" : "StructureDefinition",
+  "kind" : "logical",
+  "url" : "http://hl7.org/fhir/immunization",
+  "type" : "http://hl7.org/fhir/immunization",
+  "version" : "5.0",
+  "fhirVersion" : "5.0.0",
+  "abstract" : false,
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [ {
+      "id" : "immunizationcard",
+      "path" : "immunizationcard"
+    }, {
+      "id" : "immunizationcard.patientprofile",
+      "max" : "1",
+      "min" : 1,
+      "path" : "immunizationcard.patientprofile",
+      "short" : "personal identification number",
+      "type" : [ {
+        "code" : "Patient"
+      } ]
+    }, {
+      "id" : "immunizationcard.firstname",
+      "max" : "*",
+      "min" : 1,
+      "path" : "immunizationcard.firstname",
+      "short" : "firstname",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "immunizationcard.lastname",
+      "max" : "*",
+      "min" : 1,
+      "path" : "immunizationcard.lastname",
+      "short" : "last name",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "immunizationcard.ifvaccinated",
+      "max" : "1",
+      "min" : 0,
+      "path" : "immunizationcard.ifvaccinated",
+      "type" : [ {
+        "code" : "boolean"
+      } ]
+    }, {
+      "id" : "immunizationcard.vaccinations",
+      "max" : "*",
+      "min" : 1,
+      "path" : "immunizationcard.vaccinations",
+      "type" : [ {
+        "code" : "DocumentReference"
+      } ]
+    } ]
+  }
+}

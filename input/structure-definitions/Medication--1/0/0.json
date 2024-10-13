@@ -1,0 +1,49 @@
+{
+  "id" : "Medication",
+  "name" : "Medication",
+  "resourceType" : "StructureDefinition",
+  "kind" : "logical",
+  "url" : "http://www.hl7.org/fhir/Medication",
+  "type" : "http://www.hl7.org/fhir/Medication",
+  "version" : "1/0/0",
+  "fhirVersion" : "5.0.0",
+  "abstract" : false,
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [ {
+      "id" : "Medication",
+      "path" : "Medication"
+    }, {
+      "id" : "Medication.identifier",
+      "max" : "*",
+      "min" : 1,
+      "path" : "Medication.identifier",
+      "short" : "Идентификаторы препарата",
+      "type" : [ {
+        "code" : "Identifier"
+      } ]
+    }, {
+      "id" : "Medication.medication_name",
+      "max" : "1",
+      "min" : 1,
+      "path" : "Medication.medication_name",
+      "short" : "Наименование препарата"
+    }, {
+      "id" : "Medication.dose",
+      "max" : "1",
+      "min" : 1,
+      "path" : "Medication.dose",
+      "short" : "Дозировка"
+    }, {
+      "id" : "Medication.unit",
+      "max" : "1",
+      "min" : 1,
+      "path" : "Medication.unit",
+      "short" : "ед. изм.",
+      "type" : [ {
+        "code" : "code"
+      } ]
+    } ]
+  }
+}

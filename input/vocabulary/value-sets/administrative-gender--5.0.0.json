@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "administrative-gender--5.0.0",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"codesystem-administrative-gender.html\"><code>http://hl7.org/fhir/administrative-gender</code></a></li></ul></div>"
+  },
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "http://demo-web:4200/fhir/ValueSet/administrative-gender"
+  } ],
+  "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+  "identifier" : [ {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.3.1"
+  } ],
+  "version" : "5.0.0",
+  "name" : "AdministrativeGender",
+  "title" : "AdministrativeGender",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-09-05T15:14:00.103083Z",
+  "publisher" : "HL7 (FHIR Project)",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://hl7.org/fhir"
+    }, {
+      "system" : "email",
+      "value" : "fhir@lists.hl7.org"
+    } ]
+  } ],
+  "description" : "The gender of a person used for administrative purposes.",
+  "effectivePeriod" : {
+    "start" : "2024-05-06T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "5.0.0"
+    } ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id" : "Organization (FHIRUZ)",
+  "name" : "Organization (FHIRUZ)",
+  "resourceType" : "StructureDefinition",
+  "kind" : "logical",
+  "url" : "https://fhir.ssv.uz/Resource/Organization",
+  "type" : "https://fhir.ssv.uz/Resource/Organization",
+  "version" : "1",
+  "fhirVersion" : "5.0.0",
+  "abstract" : false,
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [ {
+      "id" : "Organization (FHIRUZ)",
+      "path" : "Organization (FHIRUZ)"
+    }, {
+      "id" : "Organization (FHIRUZ).address",
+      "max" : "*",
+      "min" : 1,
+      "path" : "Organization (FHIRUZ).address",
+      "type" : [ {
+        "code" : "Address"
+      } ]
+    }, {
+      "id" : "Organization (FHIRUZ).contact",
+      "max" : "*",
+      "min" : 1,
+      "path" : "Organization (FHIRUZ).contact",
+      "type" : [ {
+        "code" : "ContactDetail"
+      } ]
+    }, {
+      "fixedUri" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "id" : "Organization (FHIRUZ).identifier",
+      "max" : "*",
+      "min" : 1,
+      "path" : "Organization (FHIRUZ).identifier",
+      "type" : [ {
+        "code" : "Identifier"
+      } ]
+    } ]
+  }
+}

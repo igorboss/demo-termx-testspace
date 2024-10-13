@@ -1,0 +1,61 @@
+{
+  "id" : "StatTalon",
+  "name" : "StatTalon",
+  "resourceType" : "StructureDefinition",
+  "kind" : "logical",
+  "url" : "www.talon.com",
+  "type" : "www.talon.com",
+  "version" : "1.0",
+  "fhirVersion" : "5.0.0",
+  "abstract" : false,
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [ {
+      "id" : "StatTalon",
+      "path" : "StatTalon"
+    }, {
+      "id" : "StatTalon.id",
+      "max" : "*",
+      "min" : 1,
+      "path" : "StatTalon.id",
+      "type" : [ {
+        "code" : "Identifier"
+      } ]
+    }, {
+      "id" : "StatTalon.birthday",
+      "max" : "1",
+      "min" : 1,
+      "path" : "StatTalon.birthday",
+      "type" : [ {
+        "code" : "dateTime"
+      } ]
+    }, {
+      "definition" : "Family",
+      "id" : "StatTalon.name1",
+      "max" : "1",
+      "min" : 1,
+      "path" : "StatTalon.name1",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "definition" : "Name",
+      "id" : "StatTalon.name2",
+      "max" : "*",
+      "min" : 1,
+      "path" : "StatTalon.name2",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "StatTalon.icd10",
+      "max" : "*",
+      "min" : 1,
+      "path" : "StatTalon.icd10",
+      "type" : [ {
+        "code" : "code"
+      } ]
+    } ]
+  }
+}

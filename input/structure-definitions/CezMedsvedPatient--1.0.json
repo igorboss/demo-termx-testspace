@@ -1,0 +1,91 @@
+{
+  "id" : "CezMedsvedPatient",
+  "name" : "CezMedsvedPatient",
+  "resourceType" : "StructureDefinition",
+  "kind" : "resource",
+  "url" : "http://terminology.hl7.org/Patient",
+  "type" : "http://terminology.hl7.org/Patient",
+  "version" : "1.0",
+  "fhirVersion" : "5.0.0",
+  "abstract" : false,
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [ {
+      "id" : "CezMedsvedPatient",
+      "path" : "CezMedsvedPatient"
+    }, {
+      "id" : "CezMedsvedPatient.id",
+      "max" : "1",
+      "min" : 1,
+      "path" : "CezMedsvedPatient.id",
+      "type" : [ {
+        "code" : "id"
+      } ]
+    }, {
+      "id" : "CezMedsvedPatient.lastName",
+      "max" : "1",
+      "min" : 0,
+      "path" : "CezMedsvedPatient.lastName",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "CezMedsvedPatient.firstName",
+      "max" : "1",
+      "min" : 0,
+      "path" : "CezMedsvedPatient.firstName",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "CezMedsvedPatient.patronymic",
+      "max" : "1",
+      "min" : 0,
+      "path" : "CezMedsvedPatient.patronymic",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "CezMedsvedPatient.gender",
+      "max" : "1",
+      "min" : 0,
+      "path" : "CezMedsvedPatient.gender",
+      "type" : [ {
+        "code" : "code"
+      } ]
+    }, {
+      "id" : "CezMedsvedPatient.birthDate",
+      "max" : "1",
+      "min" : 0,
+      "path" : "CezMedsvedPatient.birthDate",
+      "type" : [ {
+        "code" : "date"
+      } ]
+    }, {
+      "id" : "CezMedsvedPatient.deathDate",
+      "max" : "1",
+      "min" : 0,
+      "path" : "CezMedsvedPatient.deathDate",
+      "type" : [ {
+        "code" : "dateTime"
+      } ]
+    }, {
+      "id" : "CezMedsvedPatient.address",
+      "max" : "1",
+      "min" : 0,
+      "path" : "CezMedsvedPatient.address",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "Mzkrcezmc.lastName",
+      "max" : "*",
+      "min" : 0,
+      "path" : "Mzkrcezmc.lastName",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    } ]
+  }
+}

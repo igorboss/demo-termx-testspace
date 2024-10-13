@@ -1,0 +1,79 @@
+{
+  "id" : "KZ_Patient",
+  "name" : "KZ_Patient",
+  "resourceType" : "StructureDefinition",
+  "kind" : "resource",
+  "url" : "http://example.kz/Patient",
+  "type" : "http://example.kz/Patient",
+  "version" : "1",
+  "fhirVersion" : "5.0.0",
+  "abstract" : false,
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [ {
+      "id" : "KZ_Patient",
+      "path" : "KZ_Patient"
+    }, {
+      "definition" : "id",
+      "id" : "KZ_Patient.id",
+      "max" : "1",
+      "min" : 1,
+      "path" : "KZ_Patient.id",
+      "short" : "id",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "definition" : "iin",
+      "id" : "KZ_Patient.iin",
+      "max" : "1",
+      "min" : 0,
+      "path" : "KZ_Patient.iin",
+      "short" : "iin",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "definition" : "name",
+      "id" : "KZ_Patient.name",
+      "max" : "1",
+      "min" : 1,
+      "path" : "KZ_Patient.name",
+      "short" : "name",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "definition" : "birthdate",
+      "id" : "KZ_Patient.birthDate",
+      "max" : "1",
+      "min" : 1,
+      "path" : "KZ_Patient.birthDate",
+      "short" : "birthdate",
+      "type" : [ {
+        "code" : "date"
+      } ]
+    }, {
+      "definition" : "gender",
+      "id" : "KZ_Patient.gender",
+      "max" : "1",
+      "min" : 1,
+      "path" : "KZ_Patient.gender",
+      "short" : "gender",
+      "type" : [ {
+        "code" : "code"
+      } ]
+    }, {
+      "definition" : "address",
+      "id" : "KZ_Patient.address",
+      "max" : "1",
+      "min" : 1,
+      "path" : "KZ_Patient.address",
+      "short" : "address",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    } ]
+  }
+}

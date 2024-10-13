@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "rad-laterality--1.0.0",
+  "language" : "et",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "http://demo-web:4200/fhir/ValueSet/rad-laterality"
+  } ],
+  "url" : "https://taltech.ee/fhir/ValueSet/rad-laterality",
+  "version" : "1.0.0",
+  "name" : "RadLaterality",
+  "title" : "Lateraalsus",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "Laterality"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-10-04T13:50:57.586561Z",
+  "publisher" : "TalTech",
+  "description" : "Kirjeldav väärtus pildistava anatoomilisele poolsusele",
+  "effectivePeriod" : {
+    "start" : "2024-08-09T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11000181102/version/20240530",
+      "concept" : [ {
+        "code" : "7771000"
+      }, {
+        "code" : "24028007"
+      }, {
+        "code" : "51440002"
+      } ]
+    } ]
+  }
+}

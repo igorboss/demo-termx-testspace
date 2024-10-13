@@ -1,0 +1,42 @@
+{
+  "id" : "patient",
+  "name" : "patient",
+  "resourceType" : "StructureDefinition",
+  "kind" : "logical",
+  "url" : "https://localhost:52525/api/services",
+  "type" : "https://localhost:52525/api/services",
+  "fhirVersion" : "5.0.0",
+  "abstract" : false,
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [ {
+      "id" : "patient",
+      "path" : "patient"
+    }, {
+      "id" : "patient.iin",
+      "max" : "1",
+      "min" : 1,
+      "path" : "patient.iin",
+      "type" : [ {
+        "code" : "int"
+      } ]
+    }, {
+      "id" : "patient.name",
+      "max" : "1",
+      "min" : 1,
+      "path" : "patient.name",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "patient.surname",
+      "max" : "1",
+      "min" : 0,
+      "path" : "patient.surname",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    } ]
+  }
+}

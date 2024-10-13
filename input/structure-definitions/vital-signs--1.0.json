@@ -1,0 +1,63 @@
+{
+  "id" : "vital-signs",
+  "name" : "vital-signs",
+  "resourceType" : "StructureDefinition",
+  "kind" : "logical",
+  "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+  "type" : "http://terminology.hl7.org/CodeSystem/observation-category",
+  "fhirVersion" : "5.0.0",
+  "abstract" : false,
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [ {
+      "id" : "vital-signs",
+      "path" : "vital-signs"
+    }, {
+      "fixedCoding" : {
+        "code" : "81956-5",
+        "display" : "Cause of death"
+      },
+      "fixedUri" : "http://loinc.org",
+      "id" : "vital-signs.code",
+      "max" : "1",
+      "min" : 1,
+      "path" : "vital-signs.code",
+      "type" : [ {
+        "code" : "Coding"
+      } ]
+    }, {
+      "fixedUri" : "Patient/patient1",
+      "id" : "vital-signs.subject",
+      "max" : "1",
+      "min" : 1,
+      "path" : "vital-signs.subject",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "vital-signs.effectiveDateTime",
+      "max" : "1",
+      "min" : 1,
+      "path" : "vital-signs.effectiveDateTime",
+      "type" : [ {
+        "code" : "dateTime"
+      } ]
+    }, {
+      "fixedCoding" : {
+        "code" : "723513003",
+        "display" : "Myocardial infarction"
+      },
+      "fixedUri" : "http://snomed.info/sct",
+      "id" : "vital-signs.valueCodeableConcept",
+      "max" : "1",
+      "min" : 1,
+      "path" : "vital-signs.valueCodeableConcept",
+      "short" : "Myocardial infarction",
+      "type" : [ {
+        "code" : "Coding"
+      } ]
+    } ]
+  },
+  "version" : "1.0"
+}

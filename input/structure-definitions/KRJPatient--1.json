@@ -1,0 +1,59 @@
+{
+  "id" : "KRJPatient",
+  "name" : "KRJPatient",
+  "resourceType" : "StructureDefinition",
+  "kind" : "resource",
+  "url" : "https://demo.termx.org/models/KRJPatient",
+  "type" : "https://demo.termx.org/models/KRJPatient",
+  "version" : "1",
+  "fhirVersion" : "5.0.0",
+  "abstract" : false,
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [ {
+      "id" : "KRJPatient",
+      "path" : "KRJPatient"
+    }, {
+      "id" : "KRJPatient.pid",
+      "max" : "1",
+      "min" : 1,
+      "path" : "KRJPatient.pid",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "KRJPatient.firstName",
+      "max" : "*",
+      "min" : 1,
+      "path" : "KRJPatient.firstName",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "KRJPatient.lastName",
+      "max" : "1",
+      "min" : 0,
+      "path" : "KRJPatient.lastName",
+      "type" : [ {
+        "code" : "string"
+      } ]
+    }, {
+      "id" : "KRJPatient.birthDate",
+      "max" : "1",
+      "min" : 0,
+      "path" : "KRJPatient.birthDate",
+      "type" : [ {
+        "code" : "dateTime"
+      } ]
+    }, {
+      "id" : "KRJPatient.practitioner",
+      "max" : "1",
+      "min" : 1,
+      "path" : "KRJPatient.practitioner",
+      "type" : [ {
+        "code" : "Reference"
+      } ]
+    } ]
+  }
+}
