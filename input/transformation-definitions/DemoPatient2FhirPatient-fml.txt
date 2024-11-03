@@ -1,0 +1,22 @@
+map "http://termx.health/fhir/StructureMap/DemoPatient2FhirPatient" = "DemoPatient2FhirPatient"
+
+uses "http://example.org/StructureDefinition/DemoPatient" alias DemoPatient as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as target
+
+group example(source DemoPatient : DemoPatient, target Patient : Patient) {
+  DemoPatient -> Patient then {
+    DemoPatient -> Patient.identifier = create('Identifier') as a then {
+      DemoPatient.code as b -> a.value = b "dset_30";
+      DemoPatient -> a.system = ('https://termx.org/sid/pid/ni/est') as constant17 "const_31";
+    } "rule_29";
+  } "rule_28";
+  DemoPatient -> Patient then {
+    DemoPatient -> Patient.name = create('HumanName') as a then {
+      DemoPatient.lastname as b -> a.family = b "dset_34";
+      DemoPatient.firstname as c -> a.given = c "dset_35";
+    } "rule_33";
+  } "rule_32";
+  DemoPatient -> Patient then {
+    DemoPatient.sex as a -> Patient.gender = translate(a, 'https://termx.org/fhir/MapSet/sex-to-gender', 'code') as translate10 "translate_37";
+  } "rule_36";
+}
