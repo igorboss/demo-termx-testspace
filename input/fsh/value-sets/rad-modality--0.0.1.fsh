@@ -9,7 +9,7 @@ Description: "Form of radiological imaging"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-10-04T13:51:46.145621Z"
-* ^publisher = "TalTech"
+* ^publisher = "taltech"
 * ^effectivePeriod.start = "2024-08-09T00:00:00Z"
 * ^compose.inactive = false
 * SNOMED_CT#77343006

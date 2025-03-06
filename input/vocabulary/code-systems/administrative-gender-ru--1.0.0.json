@@ -8,7 +8,7 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
     "valueCode" : "executable"
   } ],
-  "url" : "http://loinc.org/CodeSystem/administrative-gender-ru",
+  "url" : "https://termx.org/fhir/CodeSystem/administrative-gender-ru",
   "version" : "1.0.0",
   "versionAlgorithmString" : "semver",
   "name" : "AdministrativeGenderRU",
@@ -16,7 +16,7 @@
   "status" : "draft",
   "experimental" : false,
   "date" : "2024-09-25T12:27:07.615012Z",
-  "publisher" : "LOINC",
+  "publisher" : "TermX",
   "effectivePeriod" : {
     "start" : "2024-09-25T00:00:00Z"
   },
@@ -35,13 +35,19 @@
   "concept" : [ {
     "code" : "female",
     "display" : "Женщина",
-    "definition" : "Female.",
+    "definition" : "Female2.",
     "designation" : [ {
+      "language" : "de-AT",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Weiblich"
+    }, {
       "language" : "en",
       "use" : {
         "code" : "display"
       },
-      "value" : "Female"
+      "value" : "Female2"
     } ]
   }, {
     "code" : "male",

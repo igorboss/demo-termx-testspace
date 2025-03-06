@@ -10,7 +10,7 @@ Description: "Kirjeldav väärtus pildistava anatoomilisele poolsusele"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-10-04T13:50:57.586561Z"
-* ^publisher = "TalTech"
+* ^publisher = "taltech"
 * ^effectivePeriod.start = "2024-08-09T00:00:00Z"
 * ^compose.inactive = false
 * SNOMED_CT#7771000

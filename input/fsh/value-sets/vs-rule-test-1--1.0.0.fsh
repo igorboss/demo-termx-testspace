@@ -9,7 +9,7 @@ Title: "vs-rule-test-1"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2024-10-04T13:42:35.977558Z"
-* ^publisher = "KTS"
+* ^publisher = "TermX"
 * ^effectivePeriod.start = "2024-10-02T00:00:00Z"
 * ^compose.inactive = true
 * include codes from system http://loinc.org|2.78

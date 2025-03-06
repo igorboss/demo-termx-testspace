@@ -1,6 +1,6 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "administrative-gender--5.0.0",
+  "id" : "administrative-gender--6.1.0",
   "language" : "en",
   "text" : {
     "status" : "generated",
@@ -18,12 +18,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.4.642.4.2"
   } ],
-  "version" : "5.0.0",
+  "version" : "6.1.0",
   "name" : "AdministrativeGender",
   "title" : "AdministrativeGender",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2024-11-20T15:00:24.605698Z",
+  "date" : "2024-12-12T08:58:33.925174Z",
   "publisher" : "HL7 International / Patient Administration",
   "contact" : [ {
     "telecom" : [ {
@@ -43,7 +43,7 @@
     }
   } ],
   "effectivePeriod" : {
-    "start" : "2024-05-06T00:00:00Z"
+    "start" : "2024-12-02T00:00:00Z"
   },
   "caseSensitive" : true,
   "content" : "complete",
@@ -62,20 +62,28 @@
     "type" : "string"
   } ],
   "concept" : [ {
-    "code" : "female2",
-    "display" : "Female2",
-    "definition" : "Female2.",
-    "designation" : [ {
-      "language" : "de-AT",
-      "use" : {
-        "code" : "display"
-      },
-      "value" : "Weiblich"
+    "code" : "female",
+    "display" : "Female",
+    "definition" : "Female.",
+    "property" : [ {
+      "code" : "test",
+      "valueString" : "4"
     } ]
   }, {
     "code" : "male",
     "display" : "Male",
-    "definition" : "Male."
+    "definition" : "Male.",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Malus"
+    } ],
+    "property" : [ {
+      "code" : "test",
+      "valueString" : "test"
+    } ]
   }, {
     "code" : "other",
     "display" : "Other",

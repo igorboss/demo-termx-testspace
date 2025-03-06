@@ -1,6 +1,6 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "administrative-gender--5.0.0",
+  "id" : "administrative-gender--6.0.1",
   "text" : {
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet administrative-gender</b></p><a name=\"administrative-gender\"> </a><a name=\"hcadministrative-gender\"> </a><a name=\"administrative-gender-en-US\"> </a><ul><li>Include all codes defined in <a href=\"codesystem-administrative-gender.html\"><code>http://hl7.org/fhir/administrative-gender</code></a></li></ul></div>"
@@ -14,12 +14,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.4.642.3.1"
   } ],
-  "version" : "5.0.0",
+  "version" : "6.0.1",
   "name" : "AdministrativeGender",
   "title" : "AdministrativeGender",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-09-05T15:14:00.103083Z",
+  "date" : "2025-03-02T09:27:25.234794Z",
   "publisher" : "HL7 International / Patient Administration",
   "contact" : [ {
     "telecom" : [ {
@@ -29,13 +29,12 @@
   } ],
   "description" : "The gender of a person used for administrative purposes.",
   "effectivePeriod" : {
-    "start" : "2024-05-06T00:00:00Z"
+    "start" : "2025-01-03T00:00:00Z"
   },
   "compose" : {
     "inactive" : false,
     "include" : [ {
-      "system" : "http://hl7.org/fhir/administrative-gender",
-      "version" : "5.0.0"
+      "valueSet" : [ "http://hl7.org/fhir/ValueSet/administrative-gender" ]
     } ]
   }
 }
