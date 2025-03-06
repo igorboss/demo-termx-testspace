@@ -1,0 +1,333 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "rad-service--5.0.1",
+  "language" : "en",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "http://demo-web:4200/fhir/CodeSystem/rad-service"
+  }, {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://taltech.ee/fhir/CodeSystem/rad-service",
+  "version" : "5.0.1",
+  "name" : "RadService",
+  "title" : "Radiology services",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Radioloogiline uuringud"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-09-10T18:17:13.555545Z",
+  "publisher" : "taltech",
+  "effectivePeriod" : {
+    "start" : "2022-09-29T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "hierarchyMeaning" : "is-a",
+  "content" : "complete",
+  "property" : [ {
+    "code" : "alias",
+    "type" : "string"
+  }, {
+    "code" : "anatomic-focus",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#anatomic-focus",
+    "description" : "Anatomic focus",
+    "type" : "Coding"
+  }, {
+    "code" : "associated-procedure",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#associated-procedure",
+    "description" : "Associated procedure",
+    "type" : "Coding"
+  }, {
+    "code" : "body-position",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#body-position",
+    "description" : "Body position",
+    "type" : "Coding"
+  }, {
+    "code" : "body-region",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#body-region",
+    "description" : "Body region",
+    "type" : "Coding"
+  }, {
+    "code" : "contrast",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#contrast",
+    "description" : "Contrast",
+    "type" : "Coding"
+  }, {
+    "code" : "definition",
+    "description" : "Definition",
+    "type" : "string"
+  }, {
+    "code" : "device",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#device",
+    "description" : "Device",
+    "type" : "Coding"
+  }, {
+    "code" : "display",
+    "uri" : "http://terminology.hl7.org/CodeSystem/designation-usage|display",
+    "description" : "Display",
+    "type" : "string"
+  }, {
+    "code" : "ehif-code",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#ehif-code",
+    "description" : "EHIF service code",
+    "type" : "Coding"
+  }, {
+    "code" : "evaluator",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#evaluator",
+    "description" : "Evaluator",
+    "type" : "Coding"
+  }, {
+    "code" : "imaging-procedure",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#imaging-procedure",
+    "description" : "Imaging procedure",
+    "type" : "Coding"
+  }, {
+    "code" : "laterality",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#laterality",
+    "description" : "Laterality",
+    "type" : "Coding"
+  }, {
+    "code" : "location",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#location",
+    "description" : "Location",
+    "type" : "Coding"
+  }, {
+    "code" : "modality",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#modality",
+    "description" : "Modality",
+    "type" : "Coding"
+  }, {
+    "code" : "performer",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#performer",
+    "description" : "Performer",
+    "type" : "Coding"
+  }, {
+    "code" : "person",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#person",
+    "description" : "Patient type",
+    "type" : "Coding"
+  }, {
+    "code" : "procedure-modifer",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#procedure-modifier",
+    "description" : "Procedure modifier",
+    "type" : "Coding"
+  }, {
+    "code" : "projection",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#projection",
+    "description" : "Projection",
+    "type" : "Coding"
+  }, {
+    "code" : "radiation",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#radiation",
+    "description" : "Radiation",
+    "type" : "Coding"
+  }, {
+    "code" : "reason-for-exam",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#reason-for-exam",
+    "description" : "Reason for exam",
+    "type" : "Coding"
+  }, {
+    "code" : "view",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#view",
+    "description" : "View",
+    "type" : "Coding"
+  }, {
+    "code" : "workload-points-evaluator",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#workload-points-evaluator",
+    "description" : "Koormuspunktid hindajale",
+    "type" : "decimal"
+  }, {
+    "code" : "workload-points-performer",
+    "uri" : "https://fhir.ee/CodeSystem/rad-properties#workload-points-performer",
+    "description" : "Koormuspunktid teostajale",
+    "type" : "decimal"
+  } ],
+  "concept" : [ {
+    "code" : "ANG",
+    "display" : "Angiography studies",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "alias"
+      },
+      "value" : "Angiograafia uuringud"
+    }, {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Angiograafia uuringud"
+    } ]
+  }, {
+    "code" : "ISU",
+    "display" : "Isotope studies",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "alias"
+      },
+      "value" : "Isotoopuuringud"
+    }, {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Isotoopuuringud"
+    } ]
+  }, {
+    "code" : "ITR",
+    "display" : "Isotope therapy",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "alias"
+      },
+      "value" : "Isotoopravi"
+    }, {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Isotoopravi"
+    } ]
+  }, {
+    "code" : "KTU",
+    "display" : "CT studies",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "alias"
+      },
+      "value" : "Kompuutertomograafia"
+    }, {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Kompuutertomograafia uuringud"
+    } ]
+  }, {
+    "code" : "MMG",
+    "display" : "Mammography",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "alias"
+      },
+      "value" : "Mammograafia"
+    }, {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Mammograafia"
+    } ]
+  }, {
+    "code" : "MRP",
+    "display" : "Procedural radiology (excluding angiography) procedures",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "alias"
+      },
+      "value" : "Menetlusradioloogia (va angiograafia) protseduurid"
+    }, {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Menetlusradioloogia (va angiograafia) protseduurid"
+    } ]
+  }, {
+    "code" : "MTU",
+    "display" : "Magnetic Resonance Imaging Studies",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "alias"
+      },
+      "value" : "Magnettomograafia uuringud"
+    }, {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Magnettomograafia uuringud"
+    } ]
+  }, {
+    "code" : "OPT",
+    "display" : "Orthopantomography",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "alias"
+      },
+      "value" : "Ortopantomograafia"
+    }, {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Ortopantomograafia"
+    } ]
+  }, {
+    "code" : "RGU",
+    "display" : "X-ray Procedures",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "alias"
+      },
+      "value" : "Röntgenülesvõtted"
+    }, {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Röntgenülesvõtted"
+    } ]
+  }, {
+    "code" : "RSK",
+    "display" : "Fluoroscopy",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "alias"
+      },
+      "value" : "Röntgenoskoopia"
+    }, {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Röntgenoskoopia"
+    } ]
+  }, {
+    "code" : "UHU",
+    "display" : "Ultrasound examinations",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "alias"
+      },
+      "value" : "Ultraheliuuringud"
+    }, {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Ultraheliuuringud"
+    } ]
+  } ]
+}
